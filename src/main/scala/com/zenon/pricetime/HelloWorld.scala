@@ -5,12 +5,11 @@ import org.http4s._
 import org.http4s.circe._
 import org.http4s.server._
 import org.http4s.dsl._
-//import org.joda.time._
 import java.time.ZonedDateTime
 import java.util.Date
 import java.text.SimpleDateFormat
 
-object HelloWorld {
+object PricetTime {
   val service = HttpService {
     case GET -> Root / "isodatetime" / name =>
       val dayOfWeek: String = maybeExtractDayOfWeek(name)
@@ -21,12 +20,24 @@ object HelloWorld {
   }
 
   def extractDayOfWeek(dateInput: String) : String = {
-    val zdt: ZonedDateTime = ZonedDateTime.parse(dateInput)
-    zdt.getDayOfWeek.toString.toLowerCase
-    //zdt.getHour.toString
-    //val day: SimpleDateFormat = new SimpleDateFormat("HHmm")
-    //timeFormat.format(Date.from(zdt.toInstant())).toString
+    abbrevDay(ZonedDateTime.parse(dateInput)
+                           .getDayOfWeek
+                           .toString
+                           .toLowerCase)
   }
+
+  def abbrevDay(day: String) : String = {
+    day match {
+      case "monday" => "mon"
+      case "tuesday" => "tues"
+      case "wednesday" => "wed"
+      case "thursday" => "thurs"
+      case "friday" => "fri"
+      case "saturday" => "sat"
+      case "sunday" => "sun"
+    }
+  }
+
 
   def extractFormattedHour(dateInput: String) : String = {
     val zdt: ZonedDateTime = ZonedDateTime.parse(dateInput)

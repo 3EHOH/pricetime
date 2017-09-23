@@ -1,18 +1,13 @@
 package com.zenon.pricetime
 
 import io.circe._
-
-
 import java.time.ZonedDateTime
-
 import org.http4s._
 import org.http4s.circe._
 import org.http4s.dsl._
 import org.http4s.server._
-
 import org.json4s._
 import org.json4s.native.JsonMethods._
-
 import scala.io.Source
 import scala.util.Try
 
@@ -25,19 +20,23 @@ object PriceTime {
     case GET -> Root / "isodatetime" / name =>
       val dayOfWeek: String = maybeExtractDayOfWeek(name)
 
-      val test = niceFeedbackReadResource("sampledata.json")
+      val rateData = niceFeedbackReadResource("sampledata.json")
 
+      val parsedRates = parse(rateData.get).extract[Rates]
 
-      val parsedRates = parse(test.get).extract[Rates]
+      var rateResponse: String = ""
 
-      val matchedRate = for (rate <- parsedRates.rates if rate.price.equals(2000))
-      yield rate
+      val matchedRate = for (rate <- parsedRates.rates if
+        (isRateInTimeRange(extractFormattedHour(name), rate.times)
+        && isRequestInDayRange(extractDayOfWeek(name), rate.days))) yield rate
 
-      isRateInRange("", "")
+      if(matchedRate.isEmpty) {
+        rateResponse = "unavailable"
+      } else {
+        rateResponse = matchedRate(0).price.toString
+      }
 
-      //print(parsed)
-
-      Ok(Json.obj("message" -> Json.fromString(s"${name}, ${matchedRate}, ${dayOfWeek}, ${extractFormattedHour(name)}")))
+      Ok(Json.obj("message" -> Json.fromString(s"Your price: ${rateResponse}, ${dayOfWeek}, ${extractFormattedHour(name)}")))
   }
 
 
@@ -88,14 +87,23 @@ object PriceTime {
     }
   }
 
-  def isRateInRange(queryRate: String, rateRange: String) : Boolean = {
-    val (rangeStart, rangeEnd) = parseRateRange("0900-2100")
-    (queryRate >= rangeStart && queryRange <= rangeEnd)
+  def isRateInTimeRange(queryRate: String, rateTimes: String) : Boolean = {
+    val (rangeStart, rangeEnd) = parseTimeRange(rateTimes)
+    (queryRate.toInt >= rangeStart && queryRate.toInt <= rangeEnd)
   }
 
-  def parseRateRange(rateRange: String) : (Int, Int) = {
-    val rateBounds = rateRange.split("-").map(_.toInt)
-    (rateBounds(0), rateBounds(1))
+  def isRequestInDayRange(queryDay: String, rateDays: String) : Boolean = {
+    for(day <- parseDayRange(rateDays) if day == queryDay) return true
+    return false
+  }
+
+  def parseTimeRange(timeRange: String) : (Int, Int) = {
+    val timeBounds = timeRange.split("-").map(_.toInt)
+    (timeBounds(0), timeBounds(1))
+  }
+
+  def parseDayRange(rateRange: String) : Array[String] = {
+    rateRange.split(",")
   }
 
   case class Rate(days: String, times: String, price: Int)

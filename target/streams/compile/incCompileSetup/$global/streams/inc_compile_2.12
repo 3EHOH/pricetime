@@ -1,0 +1,241 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/zenon/workspace/pricetime/target/scala-2.12/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.12.2
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+5 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/HelloWorld$$anonfun$1.class
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/HelloWorld$.class
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/HelloWorld.class
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/BlazeExample$.class
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/BlazeExample.class
+binary dependencies:
+13 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/.ivy2/cache/io.circe/circe-core_2.12/jars/circe-core_2.12-0.6.1.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/.ivy2/cache/org.http4s/http4s-circe_2.12/jars/http4s-circe_2.12-0.15.11a.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/.ivy2/cache/org.http4s/http4s-core_2.12/jars/http4s-core_2.12-0.15.11a.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/.ivy2/cache/org.http4s/http4s-dsl_2.12/jars/http4s-dsl_2.12-0.15.11a.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /home/zenon/.ivy2/cache/org.scalaz/scalaz-concurrent_2.12/bundles/scalaz-concurrent_2.12-7.2.7.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/.ivy2/cache/org.http4s/http4s-blaze-server_2.12/jars/http4s-blaze-server_2.12-0.15.11a.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/.ivy2/cache/org.http4s/http4s-core_2.12/jars/http4s-core_2.12-0.15.11a.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/.ivy2/cache/org.http4s/http4s-server_2.12/jars/http4s-server_2.12-0.15.11a.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/.ivy2/cache/org.scalaz/scalaz-concurrent_2.12/bundles/scalaz-concurrent_2.12-7.2.7.jar
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+1 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> /home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+5 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> com.zenon.pricetime.HelloWorld
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> com.zenon.pricetime.HelloWorld$
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> com.zenon.pricetime.HelloWorld$$anonfun$1
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> com.zenon.pricetime.BlazeExample
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> com.zenon.pricetime.BlazeExample$
+used names:
+123 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> &&
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> ->
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> /
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> <init>
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> <refinement>
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> <repeated>
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> ==
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> A
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> A1
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> AbstractPartialFunction
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Any
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> AnyRef
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> ArrowAssoc
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> B
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> B1
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Boolean
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> EntityEncoder
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Function1
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> GET
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> HelloWorld
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> HttpService
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Json
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Method
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Nothing
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Object
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Ok
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> OkSyntax
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Option
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> PartialFunction
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Path
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Predef
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Request
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Response
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Root
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Status
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> String
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> StringContext
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> T0
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Task
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> Tuple2
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> _1
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> _2
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> apply
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> asInstanceOf
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> child
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> circe
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> com
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> dsl
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> fromString
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> get
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> http4s
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> io
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> isEmpty
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> isInstanceOf
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> jsonEncoder
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> name
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> obj
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> org
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> package
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> parent
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> pricetime
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> s
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> scala
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> server
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> service
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> unapply
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> unary_!
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> unchecked
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> zenon
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> <byname>
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> <init>
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Any
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> B
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> BlazeBuilder
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> BlazeExample
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> ExecutorService
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Executors
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Function1
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> HelloWorld
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> HttpService
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Int
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> List
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Nothing
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Object
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Option
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Predef
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Properties
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Self
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Server
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> ServerApp
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> String
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> StringOps
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> Task
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> augmentString
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> bindHttp
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> blaze
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> com
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> concurrent
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> envOrNone
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> getOrElse
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> http4s
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> ip
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> java
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> map
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> mountService
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> newCachedThreadPool
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> org
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> package
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> pool
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> port
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> pricetime
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> qual$1
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> scala
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> scalaz
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> server
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> service
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> start
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> toInt
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> util
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> withServiceExecutor
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> x$2
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> x$3
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> zenon
+product stamps:
+5 items
+/home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/BlazeExample$.class -> lastModified(1506127937000)
+/home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/BlazeExample.class -> lastModified(1506127937000)
+/home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/HelloWorld$$anonfun$1.class -> lastModified(1506127937000)
+/home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/HelloWorld$.class -> lastModified(1506127937000)
+/home/zenon/workspace/pricetime/target/scala-2.12/classes/com/zenon/pricetime/HelloWorld.class -> lastModified(1506127937000)
+source stamps:
+2 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> hash(a34093031f9b6dcc69bc5c4dcfcc6de0e2620de2)
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> hash(b75e6bd0df13bea6c0437df4b99d93c3949fe346)
+binary stamps:
+9 items
+/home/zenon/.ivy2/cache/io.circe/circe-core_2.12/jars/circe-core_2.12-0.6.1.jar -> lastModified(1479658743000)
+/home/zenon/.ivy2/cache/org.http4s/http4s-blaze-server_2.12/jars/http4s-blaze-server_2.12-0.15.11a.jar -> lastModified(1493524306000)
+/home/zenon/.ivy2/cache/org.http4s/http4s-circe_2.12/jars/http4s-circe_2.12-0.15.11a.jar -> lastModified(1493524284000)
+/home/zenon/.ivy2/cache/org.http4s/http4s-core_2.12/jars/http4s-core_2.12-0.15.11a.jar -> lastModified(1493524288000)
+/home/zenon/.ivy2/cache/org.http4s/http4s-dsl_2.12/jars/http4s-dsl_2.12-0.15.11a.jar -> lastModified(1493524234000)
+/home/zenon/.ivy2/cache/org.http4s/http4s-server_2.12/jars/http4s-server_2.12-0.15.11a.jar -> lastModified(1493524275000)
+/home/zenon/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> lastModified(1492071552000)
+/home/zenon/.ivy2/cache/org.scalaz/scalaz-concurrent_2.12/bundles/scalaz-concurrent_2.12-7.2.7.jar -> lastModified(1477700155000)
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar -> lastModified(1500811962000)
+class names:
+9 items
+/home/zenon/.ivy2/cache/io.circe/circe-core_2.12/jars/circe-core_2.12-0.6.1.jar -> io.circe.Json$
+/home/zenon/.ivy2/cache/org.http4s/http4s-blaze-server_2.12/jars/http4s-blaze-server_2.12-0.15.11a.jar -> org.http4s.server.blaze.BlazeBuilder
+/home/zenon/.ivy2/cache/org.http4s/http4s-circe_2.12/jars/http4s-circe_2.12-0.15.11a.jar -> org.http4s.circe.CirceInstances
+/home/zenon/.ivy2/cache/org.http4s/http4s-core_2.12/jars/http4s-core_2.12-0.15.11a.jar -> org.http4s.package$
+/home/zenon/.ivy2/cache/org.http4s/http4s-dsl_2.12/jars/http4s-dsl_2.12-0.15.11a.jar -> org.http4s.dsl.Path
+/home/zenon/.ivy2/cache/org.http4s/http4s-server_2.12/jars/http4s-server_2.12-0.15.11a.jar -> org.http4s.server.ServerApp
+/home/zenon/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> scala.collection.immutable.StringLike
+/home/zenon/.ivy2/cache/org.scalaz/scalaz-concurrent_2.12/bundles/scalaz-concurrent_2.12-7.2.7.jar -> scalaz.concurrent.Task
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+2 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhws78zQwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw1Mev7nQABm5vdGlmeXNxAH4ADOvbbFF0AAR3YWl0c3EAfgAMEiRSdXQADSRhc0luc3RhbmNlT2ZzcQB+AAz2zudOdAAGZXF1YWxzc3EAfgAMSGGOu3QADGFzSW5zdGFuY2VPZnNxAH4ADAIzjIR0AAxzeW5jaHJvbml6ZWRzcQB+AAyft8iKdAANJGlzSW5zdGFuY2VPZnNxAH4ADLwtB4V0AAdzZXJ2aWNlc3EAfgAMPiDXV3QACW5vdGlmeUFsbHNxAH4ADNnKrYt0AAxpc0luc3RhbmNlT2ZzcQB+AAz1YWlQdAACPT1zcQB+AAyO+VNNdAAFY2xvbmVzcQB+AAxNXUN0dAAIdG9TdHJpbmdzcQB+AAzSAQrEdAACIT1zcQB+AAyBr7/NdAAKSGVsbG9Xb3JsZHNxAH4ADEwOQjx0AAhnZXRDbGFzc3NxAH4ADLsicoB0AAJuZXNxAH4ADNIuYTN0AAJlcXNxAH4ADGHBCeB0AAIjI3NxAH4ADGpCBzp0AAhmaW5hbGl6ZXNxAH4ADBW3buh0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AB5jb20uemVub24ucHJpY2V0aW1lLkhlbGxvV29ybGR1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFlzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQUwACWluaGVyaXRlZHEAfgBBTAAHcGFyZW50c3EAfgBBeHEAfgBec3EAfgBZdXEAfgA8AAAAAHNxAH4AWXVxAH4APAAAAABzcQB+AFl1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AF10AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AHZ0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHdzcQB+AGp0AANBbnlzcQB+AG5zcQB+AHF1cQB+AHQAAAACc3EAfgB2dAAFc2NhbGFxAH4AfXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAADc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAE2NvbS56ZW5vbi5wcmljZXRpbWVzcQB+AId0AAljb20uemVub25zcQB+AId0AANjb21zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV6sN8ItdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAOS9ob21lL3plbm9uL3dvcmtzcGFjZS9wcmljZXRpbWUvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFKNAkwMfm23MabxcTc/MbeDiYg3i
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwPWTYeAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAcc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwI60jyXQABm5vdGlmeXNxAH4ADN8HtO50AAJpcHNxAH4ADJniaI50AAR3YWl0c3EAfgAMMJ6RFnQADSRhc0luc3RhbmNlT2ZzcQB+AAzJgKI4dAAGc2VydmVyc3EAfgAMYcls/nQABmVxdWFsc3NxAH4ADDU6Y5N0AAxhc0luc3RhbmNlT2ZzcQB+AAydNU+odAAMc3luY2hyb25pemVkc3EAfgAMszQluXQADSRpc0luc3RhbmNlT2ZzcQB+AAymx8OqdAAEbWFpbnNxAH4ADIni99R0AAlub3RpZnlBbGxzcQB+AAw54DqqdAAMaXNJbnN0YW5jZU9mc3EAfgAMaj0UY3QADEJsYXplRXhhbXBsZXNxAH4ADEQmwsh0AAhzaHV0ZG93bnNxAH4ADMxoib50AA9yZXF1ZXN0U2h1dGRvd25zcQB+AAxC2765dAAEcG9ydHNxAH4ADBLJBfl0AAI9PXNxAH4ADDLiL7B0AAVjbG9uZXNxAH4ADCMeOk50AARwb29sc3EAfgAM8Ge5C3QABiRpbml0JHNxAH4ADNYiFIt0AAh0b1N0cmluZ3NxAH4ADEqYcH10AAIhPXNxAH4ADLEByQV0AAhnZXRDbGFzc3NxAH4ADL/9xFV0AAJuZXNxAH4ADEWH7bZ0AAJlcXNxAH4ADHAvckl0AAIjI3NxAH4ADHfKW8t0AAhmaW5hbGl6ZXNxAH4ADJRRNw90AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AE94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ACBjb20uemVub24ucHJpY2V0aW1lLkJsYXplRXhhbXBsZXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AZ3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBPTAAJaW5oZXJpdGVkcQB+AE9MAAdwYXJlbnRzcQB+AE94cQB+AGxzcQB+AGd1cQB+AEoAAAAAc3EAfgBndXEAfgBKAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBQcQB+AFl1cQB+AFoAAAAAc3EAfgBcBHEAfgAhdXEAfgBfAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AGt0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBrc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCJdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4AdnhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AYnQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AfVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4Aa3NxAH4AfHQABUFycmF5cQB+AIJ1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4AfHQABlN0cmluZ3NxAH4AgHNxAH4Ag3VxAH4AhgAAAANzcQB+AIh0AARqYXZhc3EAfgCIdAAEbGFuZ3EAfgCNc3EAfgBndXEAfgChAAAAA3NxAH4AfHQACVNlcnZlckFwcHNxAH4AgHNxAH4Ag3VxAH4AhgAAAARzcQB+AIh0AANvcmdzcQB+AIh0AAZodHRwNHNzcQB+AIh0AAZzZXJ2ZXJxAH4AjXNxAH4AfHQABk9iamVjdHEAfgClc3EAfgB8dAADQW55cQB+AIJ1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0ABNjb20uemVub24ucHJpY2V0aW1lc3EAfgC/dAAJY29tLnplbm9uc3EAfgC/dAADY29tc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFerDfCLXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0ADkvaG9tZS96ZW5vbi93b3Jrc3BhY2UvcHJpY2V0aW1lL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABS3XmvQ3xO+psBDffS5nZPDlJ/jRg==
+external apis:
+0 items
+source infos:
+2 items
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/HelloWorld.scala -> 
+AAAAAAAAAAA=
+/home/zenon/workspace/pricetime/src/main/scala/com/zenon/pricetime/Server.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXqw3wi11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOS9ob21lL3plbm9uL3dvcmtzcGFjZS9wcmljZXRpbWUvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=

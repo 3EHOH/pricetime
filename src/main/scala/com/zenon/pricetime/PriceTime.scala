@@ -17,26 +17,30 @@ object PriceTime {
   implicit val formats = org.json4s.DefaultFormats
 
   val service = HttpService {
-    case GET -> Root / "isodatetime" / name =>
-      val dayOfWeek: String = maybeExtractDayOfWeek(name)
-
-      val rateData = niceFeedbackReadResource("sampledata.json")
-
-      val parsedRates = parse(rateData.get).extract[Rates]
+    case GET -> Root / "isodatetime" / isodatetime =>
+      val dayOfWeek: String = maybeExtractDayOfWeek(isodatetime).getOrElse("Invalid")
 
       var rateResponse: String = ""
 
-      val matchedRate = for (rate <- parsedRates.rates if
-        (isRateInTimeRange(extractFormattedHour(name), rate.times)
-        && isRequestInDayRange(extractDayOfWeek(name), rate.days))) yield rate
-
-      if(matchedRate.isEmpty) {
-        rateResponse = "unavailable"
+      if(dayOfWeek.equals("Invalid")){
+        rateResponse = "Not a valid input. Try again."
       } else {
-        rateResponse = matchedRate(0).price.toString
+        val rateData = niceFeedbackReadResource("sampledata.json")
+
+        val parsedRates = parse(rateData.get).extract[Rates]
+
+        val matchedRate = for (rate <- parsedRates.rates if
+          (isRateInTimeRange(extractFormattedHour(isodatetime), rate.times)
+          && isRequestInDayRange(extractDayOfWeek(isodatetime), rate.days))) yield rate
+
+        if(matchedRate.isEmpty) {
+          rateResponse = "unavailable"
+        } else {
+          rateResponse = matchedRate(0).price.toString
+        }
       }
 
-      Ok(Json.obj("message" -> Json.fromString(s"Your price: ${rateResponse}, ${dayOfWeek}, ${extractFormattedHour(name)}")))
+      Ok(Json.obj("message" -> Json.fromString(s"Your price: ${rateResponse}")))
   }
 
 
@@ -67,11 +71,11 @@ object PriceTime {
   }
 
 
-  def maybeExtractDayOfWeek(dateInput: String) : String = {
+  def maybeExtractDayOfWeek(dateInput: String) : Option[String] = {
     try {
-      extractDayOfWeek(dateInput)
+      Some(extractDayOfWeek(dateInput))
     } catch {
-      case e: Exception => s"Exception caught: ${e}";
+      case e: Exception => None
     }
   }
 

@@ -57,7 +57,7 @@ object PriceTime {
       if(responseFormat == "xml"){
         Ok(toXml(JObject(JField("price", rateResponse))).toString)
       } else {
-        Ok(compact(render("price", rateResponse.toInt)))
+        Ok(compact(render("price", rateResponse)))
       }
   }
 

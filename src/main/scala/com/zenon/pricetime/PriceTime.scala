@@ -2,11 +2,16 @@ package com.zenon.pricetime
 
 import io.circe._
 import java.time.ZonedDateTime
-import org.http4s._
+import org.http4s.headers._
+import org.http4s.HttpService
+import org.http4s.Request
 import org.http4s.circe._
 import org.http4s.dsl._
 import org.http4s.server._
-import org.json4s._
+// import org.json4s._
+import org.json4s.JsonAST._
+import org.json4s.Xml.toXml
+import org.json4s.JsonDSL._
 import org.json4s.native.JsonMethods._
 import scala.io.Source
 import scala.util.Try
@@ -17,7 +22,17 @@ object PriceTime {
   implicit val formats = org.json4s.DefaultFormats
 
   val service = HttpService {
-    case GET -> Root / "isodatetime" / isodatetime =>
+
+    case GET -> Root / "isodatetime" / isodatetime :? queryParam =>
+
+      var responseFormat: String = ""
+      if(!queryParam.isEmpty){
+        val (queryParamKey, queryParamVals) = queryParam.head
+        val firstQueryParamVal = queryParamVals.headOption
+
+        responseFormat = getResponseFormat(firstQueryParamVal)
+      }
+
       val dayOfWeek: String = maybeExtractDayOfWeek(isodatetime).getOrElse("Invalid")
 
       var rateResponse: String = ""
@@ -26,7 +41,6 @@ object PriceTime {
         rateResponse = "Not a valid input. Try again."
       } else {
         val rateData = niceFeedbackReadResource("sampledata.json")
-
         val parsedRates = parse(rateData.get).extract[Rates]
 
         val matchedRate = for (rate <- parsedRates.rates if
@@ -36,13 +50,23 @@ object PriceTime {
         if(matchedRate.isEmpty) {
           rateResponse = "unavailable"
         } else {
-          rateResponse = matchedRate(0).price.toString
+          rateResponse = matchedRate.head.price.toString
         }
       }
 
-      Ok(Json.obj("message" -> Json.fromString(s"Your price: ${rateResponse}")))
+      if(responseFormat == "xml"){
+        Ok(toXml(JObject(JField("price", rateResponse))).toString)
+      } else {
+        Ok(compact(render("price", rateResponse.toInt)))
+      }
   }
 
+def getResponseFormat(queryParam: Option[String]) : String = {
+    queryParam match {
+      case Some(paramVal) if paramVal == "xml" => paramVal
+      case _ => "json"
+    }
+}
 
   def extractDayOfWeek(dateInput: String) : String = {
     abbrevDay(ZonedDateTime.parse(dateInput)

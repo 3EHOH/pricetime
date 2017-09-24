@@ -19,11 +19,13 @@ import scala.util.Try
 
 object PriceTime {
 
-  implicit val formats = org.json4s.DefaultFormats
+  def apply(): HttpService = service
 
   val service = HttpService {
 
     case GET -> Root / "isodatetime" / isodatetime :? queryParam =>
+
+      implicit val formats = org.json4s.DefaultFormats
 
       var responseFormat: String = ""
       if(!queryParam.isEmpty){
@@ -35,11 +37,9 @@ object PriceTime {
 
       val dayOfWeek: String = maybeExtractDayOfWeek(isodatetime).getOrElse("Invalid")
 
-      var rateResponse: String = ""
+      var rateResponse: Int = -1
 
-      if(dayOfWeek.equals("Invalid")){
-        rateResponse = "Not a valid input. Try again."
-      } else {
+      if(!dayOfWeek.equals("Invalid")){
         val rateData = niceFeedbackReadResource("sampledata.json")
         val parsedRates = parse(rateData.get).extract[Rates]
 
@@ -47,14 +47,14 @@ object PriceTime {
           (isRateInTimeRange(extractFormattedHour(isodatetime), rate.times)
           && isRequestInDayRange(extractDayOfWeek(isodatetime), rate.days))) yield rate
 
-        if(matchedRate.isEmpty) {
-          rateResponse = "unavailable"
-        } else {
-          rateResponse = matchedRate.head.price.toString
+        if(!matchedRate.isEmpty) {
+          rateResponse = matchedRate.head.price
         }
       }
 
-      if(responseFormat == "xml"){
+      if(rateResponse == -1) {
+        NotFound("Unavailable")
+      } else if(responseFormat == "xml"){
         Ok(toXml(JObject(JField("price", rateResponse))).toString)
       } else {
         Ok(compact(render("price", rateResponse)))

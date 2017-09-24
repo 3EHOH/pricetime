@@ -8,7 +8,6 @@ import org.http4s.Request
 import org.http4s.circe._
 import org.http4s.dsl._
 import org.http4s.server._
-// import org.json4s._
 import org.json4s.JsonAST._
 import org.json4s.Xml.toXml
 import org.json4s.JsonDSL._
@@ -21,36 +20,15 @@ object PriceTime {
 
   def apply(): HttpService = service
 
+  implicit val formats = org.json4s.DefaultFormats
+
   val service = HttpService {
 
     case GET -> Root / "isodatetime" / isodatetime :? queryParam =>
 
-      implicit val formats = org.json4s.DefaultFormats
-
-      var responseFormat: String = ""
-      if(!queryParam.isEmpty){
-        val (queryParamKey, queryParamVals) = queryParam.head
-        val firstQueryParamVal = queryParamVals.headOption
-
-        responseFormat = getResponseFormat(firstQueryParamVal)
-      }
-
-      val dayOfWeek: String = maybeExtractDayOfWeek(isodatetime).getOrElse("Invalid")
-
-      var rateResponse: Int = -1
-
-      if(!dayOfWeek.equals("Invalid")){
-        val rateData = niceFeedbackReadResource("sampledata.json")
-        val parsedRates = parse(rateData.get).extract[Rates]
-
-        val matchedRate = for (rate <- parsedRates.rates if
-          (isRateInTimeRange(extractFormattedHour(isodatetime), rate.times)
-          && isRequestInDayRange(extractDayOfWeek(isodatetime), rate.days))) yield rate
-
-        if(!matchedRate.isEmpty) {
-          rateResponse = matchedRate.head.price
-        }
-      }
+      var responseFormat: String = determineResponseFormat(queryParam)
+      val dayOfWeek: Option[String] = maybeExtractDayOfWeek(isodatetime)
+      var rateResponse: Int = getRate(dayOfWeek, isodatetime)
 
       if(rateResponse == -1) {
         NotFound("Unavailable")
@@ -61,7 +39,7 @@ object PriceTime {
       }
   }
 
-def getResponseFormat(queryParam: Option[String]) : String = {
+def setResponseFormat(queryParam: Option[String]) : String = {
     queryParam match {
       case Some(paramVal) if paramVal == "xml" => paramVal
       case _ => "json"
@@ -105,7 +83,6 @@ def getResponseFormat(queryParam: Option[String]) : String = {
 
   def niceFeedbackReadResource(resource: String): Option[String] = {
     try {
-      //todo close source
       val resourceList : Some[String] = Some(Source.fromResource(resource).getLines.mkString)
       resourceList
     }
@@ -132,6 +109,32 @@ def getResponseFormat(queryParam: Option[String]) : String = {
 
   def parseDayRange(rateRange: String) : Array[String] = {
     rateRange.split(",")
+  }
+
+  def determineResponseFormat(queryParam: Map[String,Seq[String]]) : String = {
+    var firstQueryParamVal : Option[String] = None
+    if(!queryParam.isEmpty){
+      val (queryParamKey, queryParamVals) = queryParam.head
+      firstQueryParamVal = queryParamVals.headOption
+    }
+    setResponseFormat(firstQueryParamVal)
+  }
+
+  def getRate(dayOfWeek: Option[String], queryDate: String) : Int = {
+    var rate : Int = -1 //default
+    if(!dayOfWeek.equals(None)){
+      val rateData = niceFeedbackReadResource("sampledata.json")
+      val parsedRates = parse(rateData.get).extract[Rates]
+
+      val matchedRate = for (rate <- parsedRates.rates if
+        (isRateInTimeRange(extractFormattedHour(queryDate), rate.times)
+        && isRequestInDayRange(extractDayOfWeek(queryDate), rate.days))) yield rate
+
+      if(!matchedRate.isEmpty) {
+        rate = matchedRate.head.price
+      }
+    }
+    rate
   }
 
   case class Rate(days: String, times: String, price: Int)

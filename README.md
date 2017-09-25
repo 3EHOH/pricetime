@@ -4,7 +4,7 @@ This application has a single endpoint that allows a user to query against a loc
 
 <b>Get Started</b>
 
-Clone the repo and run `sbt` and `sbt run`.
+Clone the repo and run `sbt`.
 
 The application defaults to `http://localhost:8080`.
 

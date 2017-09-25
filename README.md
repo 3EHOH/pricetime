@@ -10,6 +10,8 @@ The application defaults to `http://localhost:8080`.
 
 In order to query the API, go to `/isodatetime/<isodatetime>` and replace `<isodatetime>` with an actual isodatetime, such as `2015-07-04T07:00:00Z`.
 
+A datetime that is out of range or invalidly formatted will return `Unavailable`.
+
 Metrics *should* return at the `/metrics` endpoint.*
 
 The response defaults to json, but in order toggle to xml, add a query parameter to your request. Ex: `/isodatetime/<isodatetime>?<any>=xml`. Any other (or no) query parameter will default to json.

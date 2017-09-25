@@ -16,10 +16,10 @@ The response defaults to json, but in order toggle to xml, add a query parameter
 
 <b>Known Issues</b>
 - Although the metrics endpoint is in place, and several metrices are registered, I have so far been unable to get Metrics actually   reporting.
-- Although the json/xml query parameter is not the proper way to toggle, I was unable to use the http4s library's headers object to actually return any request headers
+- Although the json/xml query parameter is not the proper way to toggle, I have so far been unable to get http4s library's headers object to actually return request headers, and I felt compelled to meet the `JSON & XML` requirement in some fashion.
 
-<b>Successes</b>
-- 17 tests are in place and passing
+<b>Code coverage</b>
+- 17 unite and integration tests are in place and passing
 
 <b>To Do</b>
 - Remove redundant / unnecessary packages
@@ -27,8 +27,8 @@ The response defaults to json, but in order toggle to xml, add a query parameter
 - replace json file with database
 
 <b>Versions</b>
-Scala Version: 2.12.2
-SBT Version: 0.13
+- Scala Version: 2.12.2
+- SBT Version: 0.13
 
 <b>License</b>
 

@@ -1,5 +1,5 @@
-// package com.zenon.pricetime
-//
+package com.zenon.pricetime
+
 import org.scalatest._
 import org.scalamock.scalatest.MockFactory
 import org.scalatest.FlatSpec
@@ -11,9 +11,9 @@ import org.http4s._
 
 class PriceTimeServiceSpec extends HttpServiceSpec {
 
-  "PriceTime" should {
+  "PriceTimeService" should {
 
-    val service = PriceTime()
+    val service = PriceTimeService()
 
     "Return by default a JSON value with a price given a valid ISODate and no query parameters" in {
       val request = new Request(uri = Uri(path = "/isodatetime/2015-07-04T05:00:00Z"))

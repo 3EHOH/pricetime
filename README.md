@@ -19,7 +19,7 @@ The response defaults to json, but in order toggle to xml, add a query parameter
 - Although the json/xml query parameter is not the proper way to toggle, I have so far been unable to get http4s library's headers object to actually return request headers, and I felt compelled to meet the `JSON & XML` requirement in some fashion.
 
 <b>Code coverage</b>
-- 17 unite and integration tests are in place and passing
+- 17 total unit and integration tests are in place and passing.
 
 <b>To Do</b>
 - Remove redundant / unnecessary packages
